@@ -51,7 +51,7 @@ public class FlipkartPages extends TestBase{
 	 public void closingLoginModule()
 	 {
 		// waitforElement((By) closeLoginModule,10);
-		 objSmallCommon.waitforElement(By.xpath("//button[@class='_2KpZ6l _2doB4z']"), 30);
+		 objCommon.waitforElement(By.xpath("//button[@class='_2KpZ6l _2doB4z']"), 30);
 		 closeLoginModule.click();
 	 }
 	 
@@ -69,7 +69,7 @@ public class FlipkartPages extends TestBase{
 	 
 	 public void ClickingOnFirstProduct()
 	 {
-		 objSmallCommon.waitforElement((By.xpath("((//a[@class='_1fQZEK'])[1]/div[2])/div[1]/div[1]")) ,10);
+		 objCommon.waitforElement((By.xpath("((//a[@class='_1fQZEK'])[1]/div[2])/div[1]/div[1]")) ,10);
 		 clickOnFirstProduct.click();
 	 }
 	 
@@ -78,7 +78,7 @@ public class FlipkartPages extends TestBase{
 	 public String fetchProductNameElement()
 	 {
 			 
-		 objSmallCommon.waitforElement((By.xpath("//span[@class='B_NuCI']")) , 10);
+		 objCommon.waitforElement((By.xpath("//span[@class='B_NuCI']")) , 10);
 		 
 		 return verifyProductNameElement.getText();
 	 }
@@ -96,7 +96,7 @@ public class FlipkartPages extends TestBase{
 	 
 	 public void increasingQuantity()
 	 {
-		 objSmallCommon.waitforElement((By.xpath("//button[normalize-space()='+']")) , 10);
+		 objCommon.waitforElement((By.xpath("//button[normalize-space()='+']")) , 10);
 		 addingOneMoreElementtoQuantityElement.click();
 	 }
 	 

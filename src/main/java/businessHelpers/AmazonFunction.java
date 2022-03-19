@@ -1,18 +1,18 @@
 package businessHelpers;
 
-import Library.SmallCommon;
+import Library.Common;
 import baseTest.TestBase;
 import pageClass.AmazonPages;
 
 public class AmazonFunction extends TestBase
 {
 		AmazonPages objAmazonPages;
-		SmallCommon objSmallCommon;
+		Common objSmallCommon;
 		
 		public AmazonFunction()
 		{
 			objAmazonPages = new AmazonPages();
-			objSmallCommon = new SmallCommon();
+			objSmallCommon = new Common();
 		}
 		
 		public void navigateToAmazon()

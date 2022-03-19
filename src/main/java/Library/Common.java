@@ -14,7 +14,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import baseTest.TestBase;
 
-public class SmallCommon extends TestBase{
+public class Common extends TestBase{
 
 
 	   private WebDriverWait wait;

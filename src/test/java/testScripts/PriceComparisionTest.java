@@ -5,7 +5,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import Library.SmallCommon;
+import Library.Common;
 import baseTest.TestBase;
 import businessHelpers.AmazonFunction;
 import businessHelpers.FlipkartFunction;
@@ -13,14 +13,14 @@ import businessHelpers.FlipkartFunction;
 public class PriceComparisionTest extends TestBase{
 	FlipkartFunction objFlipkartFunction;
 	AmazonFunction objAmazonFunction;
-	SmallCommon objSmallCommon;
+	Common objSmallCommon;
 	
 	@BeforeSuite(alwaysRun = true)
 	public void beforeSuite()
 	{
 		objFlipkartFunction = new FlipkartFunction();
 		objAmazonFunction = new AmazonFunction();
-		objSmallCommon = new SmallCommon();
+		objSmallCommon = new Common();
 	}
 	
 

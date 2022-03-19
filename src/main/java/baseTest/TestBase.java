@@ -1,8 +1,6 @@
 package baseTest;
 
 
-
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,7 +13,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
-import Library.SmallCommon;
+import Library.Common;
 import Utility.LoggerWrapper;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -25,7 +23,7 @@ public class TestBase {
 	public static WebDriver driver;
 	public static WebDriverWait wait;
 	public static LoggerWrapper log = null;
-	public static SmallCommon objSmallCommon;
+	public static Common objCommon;
 	
 	 public TestBase() {
 		// TODO Auto-generated constructor stub
@@ -39,7 +37,7 @@ public class TestBase {
 	 driver = new ChromeDriver();
 	 driver.manage().window().maximize();
 	 log = new LoggerWrapper(TestBase.class);
-	 objSmallCommon = new SmallCommon();
+	 objCommon = new Common();
 	}
 	
 	

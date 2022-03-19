@@ -2,19 +2,19 @@ package businessHelpers;
 
 import java.sql.Driver;
 
-import Library.SmallCommon;
+import Library.Common;
 import baseTest.TestBase;
 import pageClass.FlipkartPages;
 
 public class FlipkartFunction extends TestBase {
 	
 	FlipkartPages objFlipkartPages;
-	SmallCommon objSmallCommon;
+	Common objSmallCommon;
 	
 	public FlipkartFunction()
 	{
 		objFlipkartPages = new FlipkartPages();
-		objSmallCommon = new SmallCommon();
+		objSmallCommon = new Common();
 		
 	}
 
